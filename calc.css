@@ -16,8 +16,8 @@ body
 
 .container
 {
-    width: 30%;
-    height: 50%;
+    width: 500px;
+    height: 400px;
     background-color: black;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -34,7 +34,6 @@ body
     border-radius: 10px;
     font-size: 4rem;
     padding-left: 1rem;
-
 }
 
 
@@ -66,4 +65,23 @@ body
     grid-gap: 20px;
     color: black;
     font-size: 5rem;
+}
+
+@media (max-width:500px) {
+
+    .numbers{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        padding: 1rem 1rem;
+    }
+
+    .operations
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 3rem 1rem;
+        grid-gap: 5px;
+
+    }
 }
